@@ -7,7 +7,7 @@ steps:
     3. place order
 
 
-    1. food add:
+    food add:
             Url : http://localhost:8080/api/test/addFood
             sample payload: {
                         "name": "apple4",
@@ -31,7 +31,7 @@ steps:
                         }
                         }
 
-    2. food list: 
+    food list: 
             Url : http://localhost:8080/api/test/listFood?name=&cost=&cuisine=&food_type=&size=25&page=0&sort=-name,cuisine
             
             Query params:
@@ -67,7 +67,7 @@ steps:
                                 "currentPage": 0
                                 }
 
-    3. place order:
+    place order:
             Url :http://localhost:8080/api/test/orderFood
             sample payload :    {
                                         "user": "raghav",
