@@ -1,0 +1,7 @@
+{
+    "name": "food",
+    "cost": "50",
+    "inventory_available": "50",
+    "cuisine": "indian",
+    "food_type": "lunch"
+}

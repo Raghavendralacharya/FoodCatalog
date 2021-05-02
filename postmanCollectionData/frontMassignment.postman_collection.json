@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "b8c71d7f-cd8e-4e42-b19d-d52f1ed32e5e",
+		"name": "frontMassignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "fetch food",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/test/lstFood?name=apple&cost=100&cuisine=indian&food_type=lunch&size=5&page=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"test",
+						"lstFood"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "apple"
+						},
+						{
+							"key": "cost",
+							"value": "100"
+						},
+						{
+							"key": "cuisine",
+							"value": "indian"
+						},
+						{
+							"key": "food_type",
+							"value": "lunch"
+						},
+						{
+							"key": "size",
+							"value": "5"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/test/addFood",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/test/addFood",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"test",
+						"addFood"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/test/orderFood",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": \"raghav\",\n  \"items\":[\n    { \n      \"food_id\": \"608e29b3447dde1905c3f61a\", \n      \"quantity\": \"50\"\n    }\n  ],\n  \"total_amt\": \"100\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/test/orderFood",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"test",
+						"orderFood"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
