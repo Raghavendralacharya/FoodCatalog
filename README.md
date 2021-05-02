@@ -33,6 +33,7 @@ steps:
 
     2. food list: 
             Url : http://localhost:8080/api/test/listFood?name=&cost=&cuisine=&food_type=&size=25&page=0&sort=-name,cuisine
+            
             Query params:
                  name,
                  cost,
